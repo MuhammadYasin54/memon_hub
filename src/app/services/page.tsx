@@ -4,7 +4,7 @@ import { connection } from "next/server";
 
 export const instant = false;
 
-export const metadata = { title: "Services | Memon Tech", description: "Accounting, tax, software, branding, web design, and marketing services for your business." };
+export const metadata = { title: "Services | Memon Tech Hub", description: "Accounting, tax, software, branding, web design, and marketing services for your business." };
 
 export default async function ServicesPage() {
   await connection();

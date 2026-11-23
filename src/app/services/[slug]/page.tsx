@@ -10,7 +10,7 @@ export async function generateMetadata({ params }: PageProps<"/services/[slug]">
   await connection();
   const { slug } = await params;
   const service = await getService(slug);
-  return service ? { title: `${service.title} | Memon Tech`, description: service.summary } : { title: "Service not found | Memon Tech" };
+  return service ? { title: `${service.title} | Memon Tech Hub`, description: service.summary } : { title: "Service not found | Memon Tech Hub" };
 }
 
 export default async function ServiceDetailPage({ params }: PageProps<"/services/[slug]">) {

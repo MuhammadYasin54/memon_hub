@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Memon Tech | Your Success, Our Priority",
+  title: "Memon Tech Hub | Your Success, Our Priority",
   description: "Accounting, tax, branding, website, and marketing solutions for your business.",
 };
 

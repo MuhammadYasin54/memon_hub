@@ -14,7 +14,7 @@ export default function HomeBanner({ slides }: { slides: BannerSlide[] }) {
   }, [slides.length]);
 
   const slide = slides[active];
-  return <section className="home-banner" aria-roledescription="carousel" aria-label="Memon Tech and services">
+  return <section className="home-banner" aria-roledescription="carousel" aria-label="Memon Tech Hub and services">
     <div className="home-banner-photo" key={slide.image}>
       <img src={slide.image} alt={slide.alt} />
     </div>

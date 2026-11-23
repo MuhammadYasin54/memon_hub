@@ -60,7 +60,7 @@ export default function AdminPanel() {
 
   return <main className="admin-page"><div className="admin-wrap">
     <a className="admin-back" href="/">← Back to website</a>
-    <div className="admin-heading"><div className="eyebrow"><span className="eyebrow-dot" /> MEMON TECH</div><h1>Services <em>admin</em></h1><p>Manage the services shown on your website.</p></div>
+    <div className="admin-heading"><div className="eyebrow"><span className="eyebrow-dot" /> MEMON TECH HUB</div><h1>Services <em>admin</em></h1><p>Manage the services shown on your website.</p></div>
     {error && <p role="alert" className="admin-alert">{error}</p>}{notice && <p role="status" className="admin-notice">{notice}</p>}
     {!signedIn ? <form className="admin-card admin-login" onSubmit={login}><h2>Sign in</h2><p>Use your admin account to manage website services.</p><label>Username<input name="username" autoComplete="username" required /></label><label>Password<input name="password" type="password" autoComplete="current-password" required /></label><button className="button button-dark" type="submit">Sign in <span>↗</span></button></form> : <>
       <div className="admin-list-head"><div><h2>Published services</h2><p>{services.length} service{services.length === 1 ? "" : "s"} on your website</p></div><button type="button" className="admin-signout" onClick={logout}>Sign out</button></div>
