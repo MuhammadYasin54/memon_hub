@@ -11,8 +11,8 @@ export default async function Home() {
   await connection();
   const services = await getServices();
   const slides = [
-    { eyebrow: "WELCOME TO MEMON TUTORING HUB", title: "Support for learning, business & growth.", copy: "Memon Tutoring Hub brings thoughtful tutoring and practical business services together, helping people learn with confidence and businesses move forward.", image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=2400&q=90", alt: "Students learning together in a bright classroom", href: "/about", action: "Discover our hub" },
-    ...services.map((service) => ({ eyebrow: `SERVICE ${service.number} · MEMON TUTORING HUB`, title: service.title, copy: service.summary, image: service.image, alt: `${service.title} — professional service photography`, href: `/services/${service.slug}`, action: "Explore this service" })),
+    { eyebrow: "WELCOME TO MEMON TECH", title: "Support for learning, business & growth.", copy: "Memon Tech brings thoughtful tutoring and practical business services together, helping people learn with confidence and businesses move forward.", image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=2400&q=90", alt: "Students learning together in a bright classroom", href: "/about", action: "Discover our hub" },
+    ...services.map((service) => ({ eyebrow: `SERVICE ${service.number} · MEMON TECH`, title: service.title, copy: service.summary, image: service.image, alt: `${service.title} — professional service photography`, href: `/services/${service.slug}`, action: "Explore this service" })),
   ];
   return <PageFrame>
     <main>
